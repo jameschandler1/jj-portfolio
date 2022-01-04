@@ -1,6 +1,6 @@
 **Coding Portfolio - Jerome Chandler**
 
-~~technologies~~
+*technologies*
 
     -JavaScript
     -JQuery
