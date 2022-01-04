@@ -1,3 +1,11 @@
-this is my portfolio
+**Coding Portfolio - Jerome Chandler**
 
--jerome j chandler
+~~technologies~~
+
+    -JavaScript
+    -JQuery
+    -React
+    -Node.js
+    -CSS
+    -HTML
+    -Yarn ( package manager of choice )
