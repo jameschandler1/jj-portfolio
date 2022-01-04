@@ -6,13 +6,11 @@ import Main from './pages/Main';
 
 function App() {
   return (
-    <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Main />}/>
         </Routes>
       </Router>
-    </div>
   );
 }
 
