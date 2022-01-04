@@ -1,0 +1,16 @@
+body {
+    background-color: #f47474;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container__wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f7b0b0;
+}
