@@ -66,11 +66,46 @@ body {
 .bio {
     border: 1rem solid black;
     border-top: none;
-}
-
-.bio  {
+    width: 50%;
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
     padding: 0;
 }
+
+.bio > img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    width: 20%;
+    height: auto;
+    border: 1rem solid black;
+    border-top: none;
+    border-left: none;
+    border-bottom: .9rem solid;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.bio-title {
+    display: flex;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: .5rem;
+}
+
+.bio-body {
+    display: flex;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    padding: .5rem;
+}
+
+.header {
+    padding: .5rem;
+}
+
