@@ -16,10 +16,10 @@ body {
 }
 
 #title {
-    font-size: 2.5rem;
-    -webkit-text-stroke: 1.5px black;
-    color: transparent;
-    text-shadow: 0px -1.5px .5px rgb(0, 0, 0);
+    color: black;
+    font-size: 4rem !important;
+    font-weight: bold;
+    letter-spacing: .2rem;
 }
 
 #imgs {
@@ -37,18 +37,19 @@ body {
     column-count: 2;
     
     column-gap: 0;
+
+    border: solid black 1rem;
 }
 
 #imgs img {
     width: 100%;
     height: auto;
-    border: 1rem solid black;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
 }
 
+
 .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border: 1rem solid black;
     border-bottom: none;
     height: auto;
@@ -59,8 +60,13 @@ body {
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
-    color: rgb(3, 159, 171);
-    display: inline-flex;
+    color: transparent;
+    font-size: 5rem !important;
+    -webkit-text-stroke: 2px rgba(170, 255, 0, 0.913);
+    text-shadow: 0px -1px 0px rgba(252, 255, 53, 0.788);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row
 }
 
 .bio-link {
@@ -68,8 +74,7 @@ body {
 }
 
 .nav {
-    border: 1rem solid black;
-    border-top: none;
+    
 }
 
 .nav > h1 {
@@ -83,7 +88,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border: 1rem solid black;
+
     border-top: none;
     font-size: 2rem;
     font-weight: 700;
@@ -126,10 +131,7 @@ img.me {
     overflow: hidden;
     width: 100%;
     height: auto;
-    border: 1rem solid black;
-    border-bottom: 1rem solid;
-    margin-bottom: 1rem;
-    padding: 0;
+
 }
 
 @media screen and (max-width: 400px) {
@@ -187,6 +189,7 @@ img.me {
 }
 
 .img-link {
+    width: 100%;
     height: auto;
     line-height: 0;
     padding: 0;
@@ -223,6 +226,8 @@ img.me {
 
 }
 
+/*//////////////////////////////////////////////////////////////////////////////*/
+
 .bio-title {
     width: 80%;
     color: transparent;
@@ -235,27 +240,19 @@ img.me {
     color: rgb(0, 0, 0)
 }
 
-#title {
-    font-size: 2rem;
-    -webkit-text-stroke: 1.5px black;
-    color: transparent;
-    text-shadow: 0px -1.5px .5px rgb(0, 0, 0);
-}
-
 .bio-body {
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    margin: auto 1rem;
+    margin: auto 0rem;
     margin-bottom: 1rem;
-    padding: 0;
-    padding-left: .5rem;
-    text-align: left;
-    border: .3rem solid black;
-    border-top: none;
+    width: 90%;
+    padding-left: .2rem;
+    text-align: justify;
+    border: .3rem solid black;  
+    border-top: 0;
     border-right: none;
     border-bottom: none;
-    color: rgb(0, 0, 0);
 }
 
 .bio-link {
@@ -274,20 +271,21 @@ img.me {
     grid-template-columns: 1fr;
 }
 
+
 .about-me {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0;
     border: 1rem solid black;
-    border-right: 0;
-    border-left: 0;
-    border-top: none;
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
     padding: 0;
 }
 
+.about-me > span {
+    margin-top: 5rem;
+}
 
 /* #cf {
   position:relative;
