@@ -13,6 +13,8 @@ const Gallery = () => {
               <p className="bio-body">{bio.body}</p>
             </span>
           </div>
+        </p>
+        <div className="bio" id='items'>
           {links.map((link, i) => {
             return (
               <div id="imgs" key={i} className="gallery">
@@ -22,7 +24,7 @@ const Gallery = () => {
               </div>
             );
           })}
-        </p>
+          </div>
       </div>
     );
 

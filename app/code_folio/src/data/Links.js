@@ -1,6 +1,6 @@
 import nitelife from '../static/nitelife.png';
 import ev7 from '../static/ev7.png';
-import ev7_2 from '../static/ev7-2.png';
+import darkroom from '../static/darkroom.png';
 
 const links = [
   {
@@ -21,8 +21,8 @@ const links = [
     id: "3",
     title: "Muted Future",
     info: "I used to be anxious all the time, wondering why I was so critical of myself, and I used to feel this crushing shame just because of my existence. I know now from this long introspection, I am never going to achieve this idea of the perfect subjective experience. What I can however do is recognize that perfection is not always what you expect, sometimes that perfect specimen was someones biggest mistake, how does it feel to know perfection is in the eye of the beholder?",
-    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh5.googleusercontent.com%2Fproxy%2F43h6DfVrHv76rsHrXznOMt1EbZtSiTOzOXFQc21tZGS-e5BWeSE__6QVyK-2bKs-yxODRtRJkPnTQ3q_0YMz1EgyQxLSsCtnDMhss9YFCBLE5keEH7lIxpFjpA%3Dw1200-h630-p-k-no-nu&f=1&nofb=1",
-    link: "/",
+    img: darkroom,
+    link: "https://jameschandler1.github.io/DarkRoom/",
   },
 ];
 
