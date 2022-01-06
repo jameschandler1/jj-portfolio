@@ -136,33 +136,23 @@ img.me {
 
 @media screen and (max-width: 400px) {
     body {
-        width: 90%;
+        width: 100%;
     }
 
     .bio > img {
-        width: 100%;
-        height: auto;
+        
         font-size: .5rem;
     }
 
-    .bio {
-        width: 90%;
-    }
-
-    .nav {
-        width: 90%;
-
-    }
 
     .header {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 90%;
-        height: auto;
-        margin: 0 !important;
+
     }
 
-    #imgs {
+
+#imgs {
     /* to prevent vertical gaps */
     line-height: 0 !important;
 
@@ -177,35 +167,21 @@ img.me {
     column-count: 1;
     
     column-gap: 0;
-}
 
-#imgs img {
-    width: 100% !important;
-    height: auto !important;
-    border: 1rem solid black;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-}
+    border: solid black 1rem;
+    
+
+    }
+
 
 .img-link {
     width: 100%;
     height: auto;
-    line-height: 0;
-    padding: 0;
-    margin: 0;
     background-color: #000000;
 }
 
 .about-me {
     grid-template-columns: 1fr !important;
-    align-items: center;
-    border: 1rem solid black;
-    border-top: none;
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
 }
 
 .bio-title {
@@ -214,15 +190,13 @@ img.me {
 }
 
 img.me {
-    border: 1rem solid black;
-    border-left: none;
-    border-top: none;
-    border-right: none;
+    border-bottom: 1rem solid black;
 }
 
-.bio-link {
-    font-size: 1rem !important;
+.header > a.bio-link {
+    font-size: 2rem !important;
 }
+
 
 }
 
