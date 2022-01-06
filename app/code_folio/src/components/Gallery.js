@@ -4,28 +4,29 @@ import bio from '../data/Bio.js'
 
 const Gallery = () => {
     return (
-        <div className='gallery'>
-            <p className='bio'>
-                <img src={bio.img} alt='me'/>
-                <span className='bio-title'>
-                    {bio.title}
-                </span>
-                <p className='bio-body'>
-                    {bio.body}
-                </p>
-            </p>
-            {links.map((link, i) => {
+      <div className="gallery">
+        <p className="bio">
+          <div className="about-me">
+            <img src={bio.img} alt="me" className="me" />
+            <span className="bio-title">
+              {bio.title}
+              <p className="bio-body">
+                {bio.body}
+              </p>
+            </span>
+          </div>
+          {links.map((link, i) => {
             return (
-                <div id='imgs' key={link.id} className='gallery'>
-                    <a href='/'>
-                        <img src={link.img} alt='1' />
-                    </a>
-                </div>
-            
-            )})
-            }
-        </div>
-    )
+              <div id="imgs" key={i} className="gallery">
+                <a href={link.link} className="img-link">
+                  <img src={link.img} alt="me" />
+                </a>
+              </div>
+            );
+          })}
+        </p>
+      </div>
+    );
 
 }
 
