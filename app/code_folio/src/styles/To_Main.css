@@ -62,8 +62,8 @@ body {
     text-decoration: none;
     color: transparent;
     font-size: 5rem !important;
-    -webkit-text-stroke: 2px rgba(170, 255, 0, 0.913);
-    text-shadow: 0px -1px 0px rgba(252, 255, 53, 0.788);
+    -webkit-text-stroke: 2px rgba(255, 38, 0, 0.913);
+    text-shadow: 1px 0px 1px rgba(255, 53, 53, 0.788);
     font-weight: bold;
     display: flex;
     flex-direction: row
@@ -148,8 +148,8 @@ img.me {
     .header {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
     }
+
 
 
 #imgs {
@@ -194,7 +194,46 @@ img.me {
 }
 
 .header > a.bio-link {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 38, 0, 0.913);
+    text-shadow: 1px 0px 1px rgba(255, 53, 53, 0.788);
+    font-weight: bold;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1;
+    padding-left: 1rem;
+    margin-right: -.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 38, 0, 0.913);
+    text-shadow: 1px 0px 1px rgba(255, 53, 53, 0.788);
+    font-weight: bold;
+    animation-name: back-to-top;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes back-to-top {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 2px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.back-to-top:active {
+  
 }
 
 
