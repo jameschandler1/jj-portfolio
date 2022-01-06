@@ -9,10 +9,8 @@ const Gallery = () => {
           <div className="about-me">
             <img src={bio.img} alt="me" className="me" />
             <span className="bio-title">
-              {bio.title}
-              <p className="bio-body">
-                {bio.body}
-              </p>
+              <span id='title'>{bio.title}</span>
+              <p className="bio-body">{bio.body}</p>
             </span>
           </div>
           {links.map((link, i) => {
