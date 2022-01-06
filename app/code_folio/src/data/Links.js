@@ -11,18 +11,18 @@ const links = [
     link: "https://nitellife.herokuapp.com/registration/signup/",
   },
   {
-    id: "2",
-    title: "Smiles are Deceiving",
-    info: "I'm not a fan of smiles, but I'm not a fan of you either.",
-    img: ev7,
-    link: "https://e7vintage.herokuapp.com/",
-  },
-  {
     id: "3",
     title: "Muted Future",
     info: "I used to be anxious all the time, wondering why I was so critical of myself, and I used to feel this crushing shame just because of my existence. I know now from this long introspection, I am never going to achieve this idea of the perfect subjective experience. What I can however do is recognize that perfection is not always what you expect, sometimes that perfect specimen was someones biggest mistake, how does it feel to know perfection is in the eye of the beholder?",
     img: darkroom,
     link: "https://jameschandler1.github.io/DarkRoom/",
+  },
+  {
+    id: "2",
+    title: "Smiles are Deceiving",
+    info: "I'm not a fan of smiles, but I'm not a fan of you either.",
+    img: ev7,
+    link: "https://e7vintage.herokuapp.com/",
   },
 ];
 
