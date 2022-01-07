@@ -137,6 +137,8 @@ img.me {
 @media screen and (max-width: 400px) {
     body {
         width: 100%;
+        height: 100%;
+        overflow: scroll;
     }
 
     .bio > img {
@@ -185,7 +187,8 @@ img.me {
 }
 
 .bio-title {
-    padding: 0 !important;
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
     margin: 0 auto !important;
 }
 
@@ -213,29 +216,26 @@ img.me {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: transparent;
-    -webkit-text-stroke: 2px rgba(255, 38, 0, 0.913);
-    text-shadow: 1px 0px 1px rgba(255, 53, 53, 0.788);
-    font-weight: bold;
+    opacity: .1;
     animation-name: back-to-top;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    
+    animation-timing-function: ease-in-out; 
+    transition: opacity .2s ease-in-out;
 }
+
+.back-to-top:will-change: {
+    opacity: 1;
+};
+
+
+
 
 @keyframes back-to-top {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 2px); }
     100%   { transform: translate(0, -0px); }   
 }
-
-.back-to-top:active {
-  
-}
-
 
 }
 
