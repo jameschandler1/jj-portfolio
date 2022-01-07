@@ -5,7 +5,7 @@ import bio from '../data/Bio.js'
 const Gallery = () => {
     return (
       <div className="gallery">
-        <p className="bio">
+        <div className="bio">
           <div className="about-me">
             <img src={bio.img} alt="me" className="me" />
             <span className="bio-title">
@@ -13,7 +13,7 @@ const Gallery = () => {
               <p className="bio-body">{bio.body}</p>
             </span>
           </div>
-        </p>
+        </div>
         <div className="bio" id='items'>
           {links.map((link, i) => {
             return (
