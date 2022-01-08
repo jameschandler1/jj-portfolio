@@ -13,8 +13,10 @@ const Gallery = () => {
               <p className="bio-body">{bio.body}</p>
               <span className="contact-info">
                 <p>contact information</p>
-                email: {bio.email} <br />
-                phone: {bio.phone} 
+                <ul>
+                  <li>{bio.email}</li>
+                  <li>{bio.phone}</li>
+                </ul>
               </span>
             </span>
           </div>

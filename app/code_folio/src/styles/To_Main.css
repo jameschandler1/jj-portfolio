@@ -89,7 +89,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
     border-top: none;
     font-size: 2rem;
     font-weight: 700;
@@ -135,7 +134,34 @@ img.me {
 
 }
 
-@media screen and (max-width: 400px) {
+.contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 0rem auto;
+        padding-top: 0em;
+}
+
+.contact-info > p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.contact-info > ul > li {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 1200px) {
     body {
         width: 100%;
         height: auto;
@@ -153,23 +179,35 @@ img.me {
     .contact-info {
         display: flex;
         flex-direction: column;
-        border-bottom: .5rem solid black;
-        border-top: none;
-        border-left: none;
-        border-right: none;
         height: auto;
         margin: 1rem auto;
         padding-top: 0;
         margin-bottom: 1rem;
     }
 
-    .contact-info > p {
-        font-size: 1rem;
-        font-weight: 700;
-        margin: 0;
-        padding: 0;
-    }
 
+.contact-info > p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info > ul > li {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 0rem auto;
+        padding-top: 0em;
+}
 
 #imgs {
     /* to prevent vertical gaps */
@@ -212,6 +250,7 @@ img.me {
     padding-bottom: 1rem !important;
     padding-top: 1rem !important;
     margin: 0 auto !important;
+    padding-right: 1rem !important;
 }
 
 img.me {
@@ -255,8 +294,6 @@ div.about-me {
     border-bottom: none;
 }
 
-
-
 }
 
 /*//////////////////////////////////////////////////////////////////////////////*/
@@ -266,9 +303,8 @@ div.about-me {
     color: transparent;
     font-size: 3rem;
     font-weight: 700;
-    margin: 0 5rem;
-    padding: 0rem;
-    padding-top: 2rem;
+    margin: 0 auto;
+    padding: 0rem ;
     justify-content: left !important;
     color: rgb(0, 0, 0)
 }
@@ -277,15 +313,16 @@ div.about-me {
     color: black;
     font-size: 1.5rem;
     font-weight: 400;
-    margin: auto 0rem;
+    margin: 0 auto;
     margin-bottom: 1rem;
-    width: 90%;
-    padding-left: .2rem;
+    width: 100%;
+    padding:.5rem;
     text-align: justify;
     border: .3rem solid black;  
-    border-top: 0;
-    border-right: none;
-    border-bottom: none;
+    background-color: #ffffff;
+    box-shadow: -.5rem .5rem 0px rgba(0, 0, 0, 1);
+    flex: auto !important;
+    text-size-adjust: auto;
 }
 
 .bio-link {
@@ -317,7 +354,7 @@ div.about-me {
 }
 
 .about-me > span {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 /* #cf {
