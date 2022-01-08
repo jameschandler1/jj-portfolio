@@ -9,12 +9,19 @@ const Gallery = () => {
           <div className="about-me">
             <img src={bio.img} alt="me" className="me" />
             <span className="bio-title">
-              <span id='title'>{bio.title}</span>
+              <span id="title">{bio.title}</span>
               <p className="bio-body">{bio.body}</p>
+              <span className="contact-info">
+                <p>contact information</p>
+                <ul>
+                  <li>{bio.email}</li>
+                  <li>{bio.phone}</li>
+                </ul>
+              </span>
             </span>
           </div>
         </div>
-        <div className="bio" id='items'>
+        <div className="bio" id="items">
           {links.map((link, i) => {
             return (
               <div id="imgs" key={i} className="gallery">
@@ -24,7 +31,7 @@ const Gallery = () => {
               </div>
             );
           })}
-          </div>
+        </div>
       </div>
     );
 
