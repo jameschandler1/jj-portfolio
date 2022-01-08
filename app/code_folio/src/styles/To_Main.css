@@ -5,6 +5,10 @@
     font-weight: 400;
 }
 
+html {
+    background-color: #f0ff4b;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr;
@@ -12,7 +16,7 @@ body {
     height: auto;
     margin: 0 auto;
     padding: 0;
-    background-color: #a6fff9;
+    background: rgb(255, 255, 255);
 }
 
 #title {
@@ -108,6 +112,7 @@ img.me {
     border-bottom: none;
     position: relative;
     flex-shrink: -1;
+    background-color: rgb(238, 238, 238);
 }
 
 .bio > span > a {
@@ -358,6 +363,7 @@ div.about-me {
     font-weight: 700;
     margin: 0;
     padding: 0;
+    background-color: rgb(47, 88, 252);
 }
 
 .about-me > span {
