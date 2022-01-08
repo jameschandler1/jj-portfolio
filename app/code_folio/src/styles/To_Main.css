@@ -294,12 +294,19 @@ div.about-me {
     border-bottom: none;
 }
 
+#title {
+    font-size: 2.5rem !important;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
 }
 
 /*//////////////////////////////////////////////////////////////////////////////*/
 
 .bio-title {
-    width: 80%;
+    width: 70%;
     color: transparent;
     font-size: 3rem;
     font-weight: 700;
