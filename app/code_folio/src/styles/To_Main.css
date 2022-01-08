@@ -145,12 +145,30 @@ img.me {
         font-size: .5rem;
     }
 
-
     .header {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        border-bottom: .5rem solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: auto;
+        margin: 1rem auto;
+        padding-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .contact-info > p {
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+    }
 
 
 #imgs {
