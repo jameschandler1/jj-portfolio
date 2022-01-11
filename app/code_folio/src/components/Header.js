@@ -5,10 +5,10 @@ const Header = () => {
     return (
       <div className="header">
         <a href={bio.github} className="top-link">
-          GitHub
+          GITHUB
         </a>
         <a href={bio.linkedin} className="top-link">
-          LinkedIn
+          LINKEDIN
         </a>
       </div>
     );
