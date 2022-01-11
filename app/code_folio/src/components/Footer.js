@@ -4,9 +4,9 @@ import backtop from '../static/backtop.png'
 
 const Footer = () => {
     return (
-        <div className="bio">
+        <div className="page-container">
             <a href="/" className="back-to-top"> 
-              <img src={backtop} alt="back to top"  width='20%' height='20%'/>
+                <img src={backtop} alt="back to top" />
             </a>
         </div>
     )
