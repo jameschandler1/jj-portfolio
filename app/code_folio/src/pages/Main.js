@@ -3,20 +3,18 @@ import React from 'react'
 // css styling
 import '../styles/To_Main.css'
 // components
-import Header from '../components/Header'
-import Nav from '../components/Nav'
-import Gallery from '../components/Gallery'
+import Gallery from '../components/Container'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 const Main = () => {
     return (
-        <div>
-            <Header />
-            <Nav />
-            <Gallery />
-            <Footer />
-        </div>
-    )
+      <div className="page-container">
+        <Header />
+        <Gallery />
+        <Footer />
+      </div>
+    );
 }
 
 export default Main
