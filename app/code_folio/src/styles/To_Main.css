@@ -19,9 +19,6 @@ body {
     grid-template-columns: 1fr;
     margin: 0 auto;
     padding: 0;
-    background: linear-gradient(135deg, #ECEDDC  25%, transparent 25%) -50px 0, linear-gradient(-135deg, #ECEDDC 25%, transparent 25%) -50px 0, linear-gradient(315deg, #ECEDDC  25%, transparent 25%), linear-gradient(45deg, #ECEDDC 25%, transparent 25%); 
-    background-size: 250px 250px;
-    background-color: #06cda9; 
 }
 
 .bio {
@@ -38,20 +35,23 @@ body {
     row-gap: 0;
 }
 
-/* .bio-pic {
-    object-fit: cover;
+.bio-pic {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    object-fit: fit;
     object-position: center;
     overflow: hidden;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
     border-left: none;
     border-top: none;
     border-right: 1rem solid black;
-} */
+}
 
 .bio-pic-wrapper {
     justify-content: center;
-    width: 50%;
+    width: 100%;
     height: auto;
     border: 1rem solid black;
     border-left: none;
@@ -60,14 +60,6 @@ body {
     padding: 0;
 }
 
-.bio-pic-wrapper > img {
-    object-fit: contain;
-    object-position: center;
-    overflow: hidden;
-    width: 100%;
-    border-top: none;
-    border-right: 1rem solid black;
-}
 
 .bio-contact-info {
     border: 1rem solid black;
@@ -185,7 +177,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-
 }
 
 .header {
@@ -203,7 +194,7 @@ body {
 .top-link {
     width: auto;
     height: auto;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
     color: transparent;
@@ -269,6 +260,7 @@ body {
 @media screen and (max-width: 500px) {
     .top-link {
             font-size: 2rem;
+            margin: 0;
         }
     .bio {
         justify-content: center;
@@ -296,17 +288,30 @@ body {
         width: fill-available;
     }
     .bio-contact-info > ul {
-        padding: 1rem;
+        padding: 0rem;
         margin: 1rem 1rem;
         margin-left: 2rem;
         color: rgb(0, 0, 0);
         
     }
     .bio-body {
-        font-size: 1.5rem;
-        margin-left: .5rem;
+        font-size: 1.2rem;
+        margin-left: 0rem;
         margin-bottom: 1rem;
         color: rgb(0, 0, 0);
+    }
+    .bio-pic {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: 1rem solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: 1rem 0rem 0px black;
     }
 }
 
