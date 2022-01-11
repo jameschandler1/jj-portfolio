@@ -3,9 +3,9 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 25);
+    background-color:#ECEDDC;
     color: rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Vikeys', sans-serif;
     justify-content: center;
     align-items: center;
 }
@@ -19,39 +19,54 @@ body {
     grid-template-columns: 1fr;
     margin: 0 auto;
     padding: 0;
+    background: linear-gradient(135deg, #ECEDDC  25%, transparent 25%) -50px 0, linear-gradient(-135deg, #ECEDDC 25%, transparent 25%) -50px 0, linear-gradient(315deg, #ECEDDC  25%, transparent 25%), linear-gradient(45deg, #ECEDDC 25%, transparent 25%); 
+    background-size: 250px 250px;
+    background-color: #06cda9; 
 }
 
 .bio {
-    background-color: white;
-    color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
-    margin: auto auto;
+    margin: 0 auto;
     padding: 0;
     border: 1rem solid black;
     width: auto;
     height: auto;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-area: auto;
-    margin: auto auto;
-    padding: 0;
+    column-count: 2;
+    column-gap: 0;
+    row-gap: 0;
 }
 
-.bio-pic {
-    width: 100%;
-    height: auto;
+/* .bio-pic {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
     border-left: none;
     border-top: none;
-}
+    border-right: 1rem solid black;
+} */
 
 .bio-pic-wrapper {
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    width: 50%;
+    height: auto;
     border: 1rem solid black;
     border-left: none;
     border-top: none;
+    margin-bottom: -2rem;
+    padding: 0;
+}
+
+.bio-pic-wrapper > img {
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+    width: 100%;
+    border-top: none;
+    border-right: 1rem solid black;
 }
 
 .bio-contact-info {
@@ -86,6 +101,8 @@ body {
 }
 
 .bio-contact-info > ul > li {
+    font-size: 1.5rem;
+    background-color: rgba(254, 252, 246, 0.97);
     border-bottom: 2px solid black;
     border-left: 1rem solid black;
     list-style-type: none;
@@ -96,10 +113,6 @@ body {
 }
 
 .bio-about {
-    border: 1rem solid black;
-    border-left: none;
-    border-top: none;
-    border-right: none;
     width: fill-available;
     height: fill-available;
     display: block;
@@ -113,8 +126,8 @@ body {
     height: auto;
     display: flex;
     margin: 0;
-    margin-left: -.5rem;
-    margin-top: -3rem;
+    margin-left: -1rem;
+    margin-top: -2rem;
     margin-bottom: 1rem;
     padding: 1rem;
     justify-content: center;
@@ -123,11 +136,13 @@ body {
 }
 
 .bio-body {
+    background-color: rgba(254, 252, 246, 0.97);
     width: auto;
     height: auto;
     display: block;
     tab-size: auto;
     text-indent: 2rem;
+    color: rgb(0, 0, 0);
     justify-content: center !important;
     margin: 0;
     margin-left: 1rem;
@@ -142,37 +157,24 @@ body {
     width: auto;
     height: auto;
     line-height: 0 !important;
-
-    -webkit-column-count: 1;
-    
+    -webkit-column-count: 2;
     -webkit-column-gap: 0;
-
-    -moz-column-count: 1;
-    
+    -moz-column-count: 2;
     -moz-column-gap: 0;
-    
-    column-count: 1;
-    
+    column-count: 2;
     column-gap: 0;
-
     border: solid black 1rem;
-
-    border-bottom: none;
 }
 
 .app-img-container {
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "image image";
 }
 
 .app-img-screenshot {
     width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: auto;
 }
 
 .app-img-overlay {
@@ -205,12 +207,12 @@ body {
     font-weight: 700;
     text-decoration: none;
     color: transparent;
-    -webkit-text-stroke: 2px rgba(255, 38, 0, 0.913);
-    text-shadow: 1px 0px 1px rgba(255, 53, 53, 0.788);
+    -webkit-text-stroke: 1px rgba(255, 38, 0, 0.913);
+    text-shadow: -1px 0px 0px rgba(255, 53, 53, 0.788);
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color:#ECEDDC;
     justify-content: center;
     margin: 0;
     padding: 0rem;
@@ -268,15 +270,13 @@ body {
     .top-link {
             font-size: 2rem;
         }
-
     .bio {
-        background-color: white;
-        color: rgb(0, 0, 0);
         justify-content: center;
         align-items: center;
         margin: auto auto;
         padding: 0;
         border: 1rem solid black;
+        border-bottom: none;
         width: auto;
         height: auto;
         display: grid;
@@ -292,18 +292,43 @@ body {
     }
     .bio-contact-info > h2 {
         margin-top: -2rem;
-        padding-left: 13vw;
+        padding-left: 5.5rem;
+        width: fill-available;
     }
     .bio-contact-info > ul {
         padding: 1rem;
         margin: 1rem 1rem;
         margin-left: 2rem;
-    }
-    .bio-contact-info > ul > li {
-       
+        color: rgb(0, 0, 0);
+        
     }
     .bio-body {
-        font-size: 1rem;
-        margin-left: -.5rem;
+        font-size: 1.5rem;
+        margin-left: .5rem;
+        margin-bottom: 1rem;
+        color: rgb(0, 0, 0);
     }
+}
+
+/*border text styles*/
+
+fieldset {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: 10px solid transparent; 
+  border-top-color: black;
+  box-sizing: border-box; 
+  grid-area: 1 / 1; /* first row, first column */
+  padding: 0; 
+  margin: 0;
+  width: auto; 
+  height: auto;
+  position: relative;
+  top: .32rem;
+}
+
+fieldset:nth-of-type(1){ 
+    transform: rotate(0deg);
+    width: auto; 
+    font-weight: 900;
 }
