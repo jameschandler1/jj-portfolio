@@ -3,11 +3,19 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
-    background-color:#ECEDDC;
     color: rgb(0, 0, 0);
     font-family: 'Vikeys', sans-serif;
     justify-content: center;
     align-items: center;
+    background:
+    linear-gradient(135deg, #ECEDDC 35%, transparent 75%) -50px 0px,
+    linear-gradient(225deg, #ECEDDC 35%, transparent 75%) 50px 0px,
+    linear-gradient(315deg, #ECEDDC 35%, transparent 75%),
+    linear-gradient(45deg, #ECEDDC 35%, transparent 75%);
+    background-size: 100px 100px;
+    background-color: #EC173A;
+    background-blend-mode: color-dodge;
+    
 }
 
 .page-container {
@@ -36,7 +44,7 @@ body {
 }
 
 .bio-pic {
-    width: 90%;
+    width: 100%;
     height: auto;
     overflow: hidden;
     object-fit: fit;
@@ -50,7 +58,6 @@ body {
 }
 
 .bio-pic-wrapper {
-    justify-content: center;
     width: 100%;
     height: auto;
     border: 1rem solid black;
@@ -93,15 +100,24 @@ body {
 }
 
 .bio-contact-info > ul > li {
-    font-size: 1.5rem;
-    background-color: rgba(254, 252, 246, 0.97);
-    border-bottom: 2px solid black;
-    border-left: 1rem solid black;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom: .2rem solid black;
+    border-top: .2rem solid black;
+    border-right: .2rem solid black;
+    border-left: 1.5rem solid black;
     list-style-type: none;
     display: block;
     margin: 0;
+    margin-right: .5rem;
     margin-left: -3rem;
-    padding: .5rem;
+    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 0rem;
+}
+
+.bio-contact-info > ul > li:first-of-type {
+    border-bottom: none;
 }
 
 .bio-about {
@@ -111,6 +127,7 @@ body {
     justify-content: left;
     margin: 1rem auto;
     padding: 1rem;
+   
 }
 
 .bio-title {
@@ -128,7 +145,7 @@ body {
 }
 
 .bio-body {
-    background-color: rgba(254, 252, 246, 0.97);
+    background-color: rgb(255, 255, 255);
     width: auto;
     height: auto;
     display: block;
@@ -198,12 +215,11 @@ body {
     font-weight: 700;
     text-decoration: none;
     color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 38, 0, 0.913);
-    text-shadow: -1px 0px 0px rgba(255, 53, 53, 0.788);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.913);
+    text-shadow: -0px 1px 0px rgba(157, 157, 157, 0.788);
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    background-color:#ECEDDC;
     justify-content: center;
     margin: 0;
     padding: 0rem;
@@ -220,7 +236,7 @@ body {
 }
 
 .top-link:hover {
-    background-color: #eeeeee;
+    background-color: #ff7d7daf;
 }
 
 .back-to-top {
@@ -259,8 +275,10 @@ body {
 
 @media screen and (max-width: 500px) {
     .top-link {
-            font-size: 2rem;
+            font-size: 1.5rem;
             margin: 0;
+            padding: .5rem;
+
         }
     .bio {
         justify-content: center;
@@ -279,17 +297,25 @@ body {
         padding: 0;
     }
     .bio-title {
-       margin-top: -2.5rem;
-       margin-left: -1rem;
+        justify-content: left;
+        margin-top: -2.5rem;
+        margin-left: -1rem;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.913);
+        text-shadow: -0px 1px 0px rgba(199, 199, 199, 0.788);
     }
     .bio-contact-info > h2 {
         margin-top: -2rem;
-        padding-left: 5.5rem;
+        padding-left: 1rem;
         width: fill-available;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.913);
+        text-shadow: -0px 1px 0px rgba(199, 199, 199, 0.788);
     }
     .bio-contact-info > ul {
         padding: 0rem;
-        margin: 1rem 1rem;
+        padding-left: .5rem;
+        margin: 1rem .5rem;
         margin-left: 2rem;
         color: rgb(0, 0, 0);
         
@@ -301,7 +327,7 @@ body {
         color: rgb(0, 0, 0);
     }
     .bio-pic {
-        width: 50%;
+        width: 100%;
         height: auto;
         display: block;
         margin: 0;
@@ -336,4 +362,15 @@ fieldset:nth-of-type(1){
     transform: rotate(0deg);
     width: auto; 
     font-weight: 900;
+}
+
+.apps > h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 1rem 0rem 0px black;
+    
+    margin: 1rem auto;
+    padding: 0;
 }

@@ -24,9 +24,10 @@ const Gallery = () => {
           </span>
         </div>
         <div className="apps">
-        <fieldset>
-          <legend> ▽ CLICK ME ▽ </legend>
-        </fieldset>
+          <h2>APPS</h2>
+          <fieldset>
+            <legend> ▽ CLICK ME ▽ </legend>
+          </fieldset>
           {links.map((link, i) => {
             return (
               <div key={i} className="app-img-container">
