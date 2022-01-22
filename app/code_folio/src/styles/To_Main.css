@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   color: #333;
   background-color: #fff;
-  max-width: 800px;
+  max-width: 960px;
   margin: auto;
   padding: 1rem;
   
@@ -61,17 +61,7 @@ body {
   font-weight: bold;
 }
 
-.bio-pic-wrapper {
-  width: 50%;
-  height: 40%;
-  object-position: center;
-  float: left;
-  position: relative;
-  right: -1rem;
-  overflow: hidden;
-  margin: auto;
-  padding: 0.8rem;
-}
+
 
 .info-h2 {
   font-size: 2rem;
@@ -99,10 +89,23 @@ body {
   justify-content: left;
 
 }
+.bio-pic-wrapper {
+  max-width: 150px;
+  height: auto;
+  object-position: center;
+  object-fit: cover;
+  float: left;
+  position: relative;
+  right: -1rem;
+  overflow: hidden;
+  margin: auto;
+  padding: 0.8rem;
+}
 
 .bio-pic {
   width: 100%;
   height: auto;
+  object-fit: cover;
   margin: 0 auto;
   padding: 1rem;
   position: relative;
