@@ -38,6 +38,7 @@ const Gallery = () => {
                   <h2>{link.title}<span>by Jerome</span></h2>
                   <div>
                     <p>{link.info}</p>
+                    <p>{link.git}</p>
                   </div>
                   <a href={link.link}>View more</a>
                 </figcaption>			
