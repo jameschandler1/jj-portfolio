@@ -7,6 +7,7 @@ const Header = () => {
         <a href={bio.github} className="top-link">
           GITHUB
         </a>
+        {` `}//
         <a href={bio.linkedin} className="top-link">
           LINKEDIN
         </a>

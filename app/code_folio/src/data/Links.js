@@ -2,14 +2,22 @@ import nitelife from '../static/nitelife.png';
 import ev7 from '../static/ev7.png';
 import ev7_2 from '../static/ev7-2.png';
 import darkroom from '../static/darkroom.png';
+import dev from '../static/dev.png';
 
 const links = [
   {
     id: "1",
     title: "NiteLife",
-    info: "that's because no matter what you'll always lose it in the end.",
+    info: "fullstack site using python/django",
     img: nitelife,
     link: "https://nitellife.herokuapp.com/registration/signup/",
+  },
+  {
+    id: "4",
+    title: "DevConnect",
+    info: "A Website to demonstrate crud in node.js ustilizing the MERN stack and fully deployed of course ;).",
+    img: dev,
+    link: "https://devlconnect.herokuapp.com/",
   },
   {
     id: "2",
@@ -27,5 +35,6 @@ const links = [
     link: "https://jameschandler1.github.io/DarkRoom/",
   },
 ];
+
 
 export default links

@@ -5,14 +5,14 @@ import '../styles/To_Main.css'
 // components
 import Gallery from '../components/Container'
 import Footer from '../components/Footer'
-import Header from '../components/Header'
 
 const Main = () => {
     return (
-      <div className="page-container">
-        <Header />
+      <div className="main">
+      <div className="main-container">
         <Gallery />
         <Footer />
+      </div>
       </div>
     );
 }
