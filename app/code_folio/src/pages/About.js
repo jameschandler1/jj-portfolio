@@ -2,12 +2,11 @@ import React from 'react';
 import NavB from '../components/NavB';
 import Landing from '../components/Landing';
 
-
-const Home = () => {
-
+const About = () => {
   return <>
-            <NavB  />
-            <Landing  />
-         </>;
+  <NavB />
+  <Landing />
+  </>
 };
-export default Home;
+
+export default About;

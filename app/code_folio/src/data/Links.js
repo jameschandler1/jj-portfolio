@@ -1,8 +1,8 @@
-import nitelife from '../static/nitelife.png';
-import ev7 from '../static/ev7.png';
-import ev7_2 from '../static/ev7-2.png';
-import darkroom from '../static/darkroom.png';
-import dev from '../static/dev.png';
+import nitelife from '../static/images/nitelife.png';
+import ev7 from '../static/images/ev7.png';
+import ev7_2 from '../static/images/ev7-2.png';
+import darkroom from "../static/images/darkroom.png";
+import dev from "../static/images/dev.png";
 
 const links = [
   {

@@ -8,7 +8,10 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background: linear-gradient(89deg, #0b0b0b 0%, rgb(24, 24, 24), #131313 100%);
+    background: linear-gradient(90deg, #111112 0%, rgb(20, 24, 24), #1d1d1f 100%) !important;
+}
+.nb {
+    border-bottom: 1px groove rgb(76, 249, 61);
 }
 
 .nav-title-link {
@@ -42,15 +45,12 @@ body {
     -webkit-text-stroke: 1px rgb(108, 255, 17);
 }
 
-.nb {
-    background: linear-gradient(90deg, #000000 0%, rgb(24, 23, 23) #000000 100%);
-    border-bottom: .5px solid rgba(48, 49, 48, 0.192);
-}
 
 .cursor {
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.899);
-    text-shadow: .5px 0px 0px rgba(30, 255, 0, 0);
-    animation: cursor 1s linear infinite;
+    position: relative;
+    top: -5px;
+    font-size: 1.8rem;
+    animation: cursor 1.4s linear infinite;
 }
 
 @keyframes cursor {
@@ -58,9 +58,14 @@ body {
        color: transparent;
     }
     50% {
-        -webkit-text-stroke: 5px rgba(0, 255, 0, 0.719);  
+        color: transparent;
+        -webkit-text-stroke: 4px rgba(0, 255, 0, 0.719);  
+    }
+    75% {
+        
     }
     100% {
-       -webkit-text-stroke: 1px rgb(86, 255, 29);
+        color: transparent;
+        -webkit-text-stroke: 0px rgb(82, 255, 24);
     }
 }
