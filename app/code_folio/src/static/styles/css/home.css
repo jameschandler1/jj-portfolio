@@ -44,7 +44,7 @@ body {
 
 .nb {
     background: linear-gradient(90deg, #000000 0%, rgb(24, 23, 23) #000000 100%);
-    border-bottom: .3rem double rgba(14, 36, 14, 0.249);
+    border-bottom: .5px solid rgba(48, 49, 48, 0.192);
 }
 
 .cursor {
