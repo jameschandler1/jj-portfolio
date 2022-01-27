@@ -2,10 +2,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(100deg, #1d1d1d 0%, rgb(40, 40, 40), #1d1d1d 100%);
+}
+
 .nav-title-link {
     font-weight: 900;
     font-size: 2rem !important;
-    color: transparent;
+    color:rgba(29, 255, 37, 0.55);
     text-decoration: none;
     -webkit-text-stroke: 1px rgb(13, 255, 0);
     text-shadow: .5px 0px 0px rgba(162, 213, 155, 0);
@@ -13,14 +22,15 @@
 }
 
 .nav-title-link:hover {
-    color:rgba(29, 255, 37, 0);
+    color:rgba(29, 255, 37, 0.516);
     text-shadow: 0px 0rem 0rem rgb(45, 232, 8) !important;
 }
 
 
 .nav-link {
     font-size: 1.2rem !important;
-    color: none;
+    font-weight: 900;
+    color: black !important;
     text-decoration: none;
     -webkit-text-stroke: 1px rgb(11, 237, 11);
     text-shadow: 1px 0px 1px rgba(77, 255, 0, 0.605);
@@ -28,17 +38,17 @@
 }
 
 .nav-link:hover {
-    color:rgb(29, 255, 37);
-    -webkit-text-stroke: 1px rgb(255, 251, 29);
+    color:rgba(29, 255, 37, 0.516);
+    -webkit-text-stroke: 1px rgb(108, 255, 17);
 }
 
 .nb {
-    background-color: rgb(0, 0, 0) !important;
-    border-bottom: .5rem groove rgb(39, 77, 51) !important;
+    background: linear-gradient(100deg, #000000 0%, rgb(40, 40, 40), #000000 100%);
+    border-bottom: .1rem groove rgb(0, 255, 0);
 }
 
 .cursor {
-    -webkit-text-stroke: 1px rgba(0, 255, 0, 0);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.899);
     text-shadow: .5px 0px 0px rgba(30, 255, 0, 0);
     animation: cursor 1s linear infinite;
 }
