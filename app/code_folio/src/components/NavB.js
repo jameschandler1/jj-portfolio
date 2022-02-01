@@ -8,19 +8,22 @@ const NavB = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
-  
+
+  const hideNav = () => {
+
+  }
+ 
 
   return (
     <Navbar
-      onScroll={(e) => {
-        window.scrollY > 0 ? setSticky(!sticky) : setSticky(sticky);
-      }}
+      sticky={!sticky ? "top" : "bottom"}
+      expanded='true'
     >
       <NavbarBrand href="/" className="nav-title-link me-auto">
         ./Portfolio <span className="cursor">|</span>
       </NavbarBrand>
       <NavbarToggler
-        onClick={(e) => {
+        onClick={e => {
           setIsOpen(!isOpen);
         }}
       >

@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import bio from "../data/Bio.js";
-import skills from "../data/Skills.js"
+import skills from "../data/Skills.js";
 import links from "../data/Links.js";
 import {
   Container,
@@ -11,8 +11,6 @@ import {
   Tab,
   Carousel,
 } from "react-bootstrap";
-
-
 
 const About = () => {
 
@@ -29,28 +27,36 @@ const About = () => {
                 </Card.Body>
               </Tab>
               <Tab eventKey="skills" title="Skills" className="mb-3">
-                <Card.Body>
+                <Card.Body className="skills-list">
                   {skills.map((skill, i) => {
-                    return <Card.Img src={skill} className="skills" />;
+                    return <Card.Img key={i} src={skill} className="skills" />;
                   })}
                 </Card.Body>
               </Tab>
               <Tab eventKey="resources" title="apps">
                 <Card.Body>
-                <Carousel fade pause='hover'>
+                    <Container
+                    >
+                  <Carousel fade pause="hover" controls='false'>
                     {links.map((link, i) => {
-                    <Carousel.Item key={i}>
-                        <Card.Img src={link.img} />
-                         
-                        <Carousel.Caption>
-                            <h3>{link.title}</h3>
+                      return (
+                        <Carousel.Item key={i}>
+                          <Card.Img
+                            key={i}
+                            src={link.img}
+                            className="carousel-img"
+                          />
+                          <Carousel.Caption>
+                            <h3 >{link.title}</h3>
                             <p>{link.info}</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
+                          </Carousel.Caption>
+                        </Carousel.Item>
+                      );
                     })}
-                </Carousel>
+                  </Carousel>
+                    </Container>
                 </Card.Body>
-                </Tab>
+              </Tab>
             </Tabs>
           </Col>
         </Row>
