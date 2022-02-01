@@ -45,7 +45,7 @@ const About = () => {
                 <Card.Body>
                     <Container
                     >
-                  <Carousel fade='true' pause="hover" controls='true' >
+                  <Carousel controls fade='true' pause="hover" interval='7000'>
                     {links.map((link, i) => {
                       return (
                         <Carousel.Item key={i}>

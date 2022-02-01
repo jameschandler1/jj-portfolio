@@ -257,16 +257,22 @@ body {
 
 .carousel {
   max-width: 100%;
-  height: 30rem;
+  height: 25rem;
   border-radius: 0;
   box-shadow: 0;
+}
+
+.carousel-indicators {
+    bottom: 1rem;
 }
 
 .carousel-img {
   max-width: 40%;
   width: auto;
+  min-height: 150px;
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: 10px;
+  border: 0;
   box-shadow: 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -289,4 +295,12 @@ body {
   font-size: 1rem;
   font-weight: 300;
   font-size: 0.8rem;
+}
+
+.carousel-control-prev {
+    content-visibility: hidden !important;
+}
+
+.carousel-control-next {
+    content-visibility: hidden !important;
 }

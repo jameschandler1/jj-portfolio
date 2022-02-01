@@ -1,7 +1,7 @@
 // required modules
-import React,{useState} from "react";
+import React, {useState} from "react";
 // components
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink, NavbarToggler, Collapse, Fade } from "reactstrap";
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink, NavbarToggler, Collapse } from "reactstrap";
 import '../static/styles/css/home.css';
 
 const NavB = () => {
