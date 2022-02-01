@@ -1,8 +1,10 @@
+import img from "../static/images/farnsworth.jpeg";
+
 const bio = {
-  title: "ABOUT ME",
+  title: "ABOUT_ME",
   name: "Jerome Chandler",
-  body: "Hello my name is Jerome Chandler I'm a software engineer and recent graduate of General Assembly's Software Engineering Imerrsive Flex program and I'm currently looking for a full time position in the field of software development. I'm a focused and diligent software engineer, dedicated to producing consistent, user-friendly and elegant applications. I'm always on top of tasks, and constantly looking forward to collaboration with others. Rapidly adaptable to new technologies and their implementation into new and existing projects. Ability to work maintain and update preexisting code bases. ",
-  img: "https://cdn.iconscout.com/icon/free/png-256/user-avatar-contact-portfolio-personal-portrait-profile-3-5358.png",
+  body: "Hello world! my name is Jerome Chandler and I'm a full-stack software engineer. I'm constantly working to improve my skills as a dev and to follow my passsions. I love art and am also a musician/producer. To me the parallel between software development and music production seem countless. Each can require an almost obsessive attention to detail. Whats more an extensive knowledge  willingness to pursue said knowledge of technologies, (hardware and software) is necessary. And before we get to the production/development stage, its easy to see both require research and material gathering before the art can truly begin. To me this is where the comparison is the strongest if you have worked in a studio with analog equipment, you might know that it generally requires a pretty substantial understanding of routing, and how each connection between a piece of hardware or software affects the other. When youre calling functions or rendering components, or even just changing the value of a previously stated variable. It requires the same type of understanding or willingness to learn it. Coding to me is not just a means to an end. I Love it with my heart and soul and hope that I can always continue to grow in this endeavor. Please take your time to enjoy my portfolio, Thanks!",
+  img: img,
   email: "stillsound@protonmail.com",
   phone: "(928)-919-5243",
   github: "https://github.com/jameschandler1",

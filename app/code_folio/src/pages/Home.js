@@ -1,13 +1,14 @@
 import React from 'react';
+//components
 import NavB from '../components/NavB';
-import Landing from '../components/Landing';
-
+import About from '../components/About';
+//reactstrap && react-bootstrap components
+import Container from 'react-bootstrap/Container';
 
 const Home = () => {
-
-  return <>
-            <NavB  />
-            <Landing  />
-         </>;
+  return <Container>
+            <NavB />
+            <About />
+         </Container>;
 };
 export default Home;

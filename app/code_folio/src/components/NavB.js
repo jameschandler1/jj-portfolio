@@ -1,38 +1,49 @@
 // required modules
-import React from "react";
+import React,{useState} from "react";
 // components
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Col } from "reactstrap";
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink, NavbarToggler, Collapse } from "reactstrap";
 import '../static/styles/css/home.css';
 
-
 const NavB = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [sticky, setSticky] = useState(false);
+  
+
   return (
-    <>
-      <Navbar className="nb" sticky='top' expand="md">
-        <Col>
-          <NavbarBrand href="/" className="nav-title-link">
-           ./Portfolio <span className='cursor'>|</span>
-          </NavbarBrand>
-        </Col>
-        <Nav fill={true}>
+    <Navbar
+      onScroll={(e) => {
+        window.scrollY > 0 ? setSticky(!sticky) : setSticky(sticky);
+      }}
+    >
+      <NavbarBrand href="/" className="nav-title-link me-auto">
+        ./Portfolio <span className="cursor">|</span>
+      </NavbarBrand>
+      <NavbarToggler
+        onClick={(e) => {
+          setIsOpen(!isOpen);
+        }}
+      >
+        {isOpen === true ? (<i className="fas fa-eye"></i>) : (<i className="far fa-eye"></i>)}
+      </NavbarToggler>
+      <Collapse isOpen={isOpen} navbar>
+        <Nav className="nav-dropdown" navbar>
+          <NavLink href="/contact" className="nav-link">
+            $ cd contact
+          </NavLink>
           <NavItem>
-            <NavLink href="/about" className="nav-link">
-              /about
+            <NavLink href="#link" className="nav-link">
+              $ cd music
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/projects" className="nav-link">
-              /projects
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#link" className="nav-link">
-              /home
+              $ cd projects
             </NavLink>
           </NavItem>
         </Nav>
-      </Navbar>
-    </>
+      </Collapse>
+    </Navbar>
   );
 };
 
