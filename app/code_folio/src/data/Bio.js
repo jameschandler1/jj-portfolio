@@ -1,4 +1,4 @@
-import img from "../static/images/farnsworth.jpeg";
+import img from "../static/images/bio-pic.jpeg";
 
 const bio = {
   title: "ABOUT_ME",

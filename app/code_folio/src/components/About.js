@@ -13,22 +13,35 @@ import {
 } from "react-bootstrap";
 
 const About = () => {
-
   return (
     <Container fluid="xl">
       <Card className="about-card">
         <Row>
           <Col>
             <Card.Body>
-            <Card.Title>Jerome Chandler</Card.Title>
+              <Card.Title className='name'>Jerome Chandler</Card.Title>
             </Card.Body>
+            <Card.Img src={bio.img} className='me'/>
+          </Col>
+          <Col>
+            <Card.Body>
+              <a href={bio.github} className="about-links">
+                Github <i className="fas fa-arrow-right"></i>
+              </a>
+              <a href={bio.linkedin} className="about-links">
+                LinkedIn
+                <i className="fas fa-arrow-right"></i>
+              </a>
+            </Card.Body>         
           </Col>
         </Row>
         <Row>
           <Col>
-            <Card.Img src={bio.img} />
-
-            <Tabs id="uncontrolled-tab-example" className="mb-3">
+            <Tabs
+              id="uncontrolled-tab-example"
+              className="mb-3"
+              defaultActiveKey="resources"
+            >
               <Tab eventKey="bio" title="Bio">
                 <Card.Body>
                   <Card.Text>{bio.body}</Card.Text>
@@ -43,28 +56,36 @@ const About = () => {
               </Tab>
               <Tab eventKey="resources" title="apps">
                 <Card.Body>
-                    <Container
+                  <Container>
+                    <Carousel
+                      controls
+                      fade="true"
+                      pause="hover"
+                      interval="7000"
                     >
-                  <Carousel controls fade='true' pause="hover" interval='7000'>
-                    {links.map((link, i) => {
-                      return (
-                        <Carousel.Item key={i}>
-                          <a href={link.link} target="_blank" rel="noopener noreferrer">
-                          <Card.Img
-                            key={i}
-                            src={link.img}
-                            className="carousel-img"
-                          />
-                          </a>
-                          <Carousel.Caption>
-                            <h3 >{link.title}</h3>
-                            <p>{link.info}</p>
-                          </Carousel.Caption>
-                        </Carousel.Item>
-                      );
-                    })}
-                  </Carousel>
-                    </Container>
+                      {links.map((link, i) => {
+                        return (
+                          <Carousel.Item key={i}>
+                            <a
+                              href={link.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Card.Img
+                                key={i}
+                                src={link.img}
+                                className="carousel-img"
+                              />
+                            </a>
+                            <Carousel.Caption>
+                              <h3>{link.title}</h3>
+                              <p>{link.info}</p>
+                            </Carousel.Caption>
+                          </Carousel.Item>
+                        );
+                      })}
+                    </Carousel>
+                  </Container>
                 </Card.Body>
               </Tab>
             </Tabs>

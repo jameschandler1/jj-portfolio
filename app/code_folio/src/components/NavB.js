@@ -7,19 +7,11 @@ import '../static/styles/css/home.css';
 const NavB = () => {
 
   const [isOpen, setIsOpen] = useState(false);
-  const [sticky, setSticky] = useState(false);
+  
 
   return (
     <Navbar
-      sticky
-      onScroll={() => {
-        if (window.pageYOffset > 100) {
-          setSticky(sticky);
-        } else {
-          setSticky(!sticky);
-        }
-      }
-    }
+      // sticky='top'
       expanded='true'
     >
       <NavbarBrand href="/" className="nav-title-link me-auto">
@@ -35,17 +27,17 @@ const NavB = () => {
       <Collapse isOpen={isOpen} navbar >
 
         <Nav className="nav-dropdown" navbar>
-          <NavLink href="/contact" className="nav-link">
-            $ cd contact
-          </NavLink>
           <NavItem>
-            <NavLink href="#link" className="nav-link">
-              $ cd music
+            <NavLink href="/" className="nav-link">
+              $ home
             </NavLink>
           </NavItem>
+          <NavLink href="mailto:jamesckun15@gmail.com" className="nav-link">
+            $ click to contact
+          </NavLink>
           <NavItem>
-            <NavLink href="/projects" className="nav-link">
-              $ cd projects
+            <NavLink href="/music" className="nav-link">
+              $ music i've made
             </NavLink>
           </NavItem>
         </Nav>
