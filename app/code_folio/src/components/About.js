@@ -19,7 +19,15 @@ const About = () => {
       <Card className="about-card">
         <Row>
           <Col>
+            <Card.Body>
+            <Card.Title>Jerome Chandler</Card.Title>
+            </Card.Body>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
             <Card.Img src={bio.img} />
+
             <Tabs id="uncontrolled-tab-example" className="mb-3">
               <Tab eventKey="bio" title="Bio">
                 <Card.Body>
@@ -37,15 +45,17 @@ const About = () => {
                 <Card.Body>
                     <Container
                     >
-                  <Carousel fade pause="hover" controls='false'>
+                  <Carousel fade='true' pause="hover" controls='true' >
                     {links.map((link, i) => {
                       return (
                         <Carousel.Item key={i}>
+                          <a href={link.link} target="_blank" rel="noopener noreferrer">
                           <Card.Img
                             key={i}
                             src={link.img}
                             className="carousel-img"
                           />
+                          </a>
                           <Carousel.Caption>
                             <h3 >{link.title}</h3>
                             <p>{link.info}</p>

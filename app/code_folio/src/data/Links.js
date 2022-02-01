@@ -1,6 +1,5 @@
 import nitelife from '../static/images/nitelife.png';
-import ev7 from '../static/images/ev7.png';
-import ev7_2 from '../static/images/ev7-2.png';
+import ev7_2 from '../static/images/ev7_2.png';
 import darkroom from "../static/images/darkroom.png";
 import dev from "../static/images/dev.png";
 
@@ -25,8 +24,7 @@ const links = [
     id: "2",
     title: "EV7",
     info: "A minimal design e-comm website. utilizing Stripe API for payment and built in django",
-    img: ev7,
-    alt_img: ev7_2,
+    img: ev7_2,
     link: "https://e7vintage.herokuapp.com/",
     git: "https://github.com/jameschandler1/eseven",
   },

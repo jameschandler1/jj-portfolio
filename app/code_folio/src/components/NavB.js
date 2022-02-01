@@ -1,7 +1,7 @@
 // required modules
 import React,{useState} from "react";
 // components
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink, NavbarToggler, Collapse } from "reactstrap";
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink, NavbarToggler, Collapse, Fade } from "reactstrap";
 import '../static/styles/css/home.css';
 
 const NavB = () => {
@@ -9,14 +9,17 @@ const NavB = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
 
-  const hideNav = () => {
-
-  }
- 
-
   return (
     <Navbar
-      sticky={!sticky ? "top" : "bottom"}
+      sticky
+      onScroll={() => {
+        if (window.pageYOffset > 100) {
+          setSticky(sticky);
+        } else {
+          setSticky(!sticky);
+        }
+      }
+    }
       expanded='true'
     >
       <NavbarBrand href="/" className="nav-title-link me-auto">
@@ -29,7 +32,8 @@ const NavB = () => {
       >
         {isOpen === true ? (<i className="fas fa-eye"></i>) : (<i className="far fa-eye"></i>)}
       </NavbarToggler>
-      <Collapse isOpen={isOpen} navbar>
+      <Collapse isOpen={isOpen} navbar >
+
         <Nav className="nav-dropdown" navbar>
           <NavLink href="/contact" className="nav-link">
             $ cd contact
@@ -45,6 +49,7 @@ const NavB = () => {
             </NavLink>
           </NavItem>
         </Nav>
+
       </Collapse>
     </Navbar>
   );
